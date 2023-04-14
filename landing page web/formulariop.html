@@ -1,0 +1,116 @@
+<!-- Agrega jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Agrega el plugin de wizard -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap-wizard/1.2/jquery.bootstrap.wizard.min.js"></script>
+
+<script src="formulariop.js"></script>
+
+<form id="wizard-form">
+    <div class="wizard">
+        <div class="wizard-inner">
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active">
+                    <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Paso 1">ingresar
+                        informacion personal</a>
+                </li>
+                <li role="presentation">
+                    <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Paso 2">elegi tu plan
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Paso 3">inscribite</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="tab-content">
+            <div class="tab-pane active" role="tabpanel" id="step1">
+                <h3>Información personal</h3>
+                <!-- campos para información personal -->
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+
+                <label for="genero">Género:</label>
+                <select id="genero" name="genero" required>
+                    <option value="">Seleccionar</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" name="comentarios"></textarea>
+
+                <button type="button" class="btn btn-primary next-step">Siguiente</button>
+            </div>
+
+            <div class="tab-pane" role="tabpanel" id="step2">
+                <h3>Cotizacion de planes</h3>
+                <!-- campos para Elegit decotizacion -->
+
+                <label for="producto">Producto:</label>
+                <select id="producto" name="producto" required>
+                    <option value="">Seleccionar</option>
+                    <option value="producto1">Producto 1</option>
+                    <option value="producto2">Producto 2</option>
+                    <option value="producto3">Producto 3</option>
+                </select>
+
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" name="cantidad" required>
+
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" name="comentarios"></textarea>
+
+                <button type="button" class="btn btn-default prev-step">Anterior</button>
+                <button type="button" class="btn btn-primary next-step">Siguiente</button>
+            </div>
+
+            <div class="tab-pane" role="tabpanel" id="step3">
+                <h3>Inscripcion 2023</h3>
+                <!-- campos para detalles de la cuenta -->
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" required>
+
+                <label for="genero">Género:</label>
+                <select id="genero" name="genero" required>
+                    <option value="">Seleccionar</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <label for="carrera">Carrera:</label>
+                <input type="text" id="carrera" name="carrera" required>
+
+                <label for="semestre">Semestre:</label>
+                <input type="number" id="semestre" name="semestre" required>
+
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" name="comentarios"></textarea>
+
+                <button type="button" class="btn btn-default prev-step">Anterior</button>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+        </div>
+    </div>
+</form>

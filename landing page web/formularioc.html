@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario de contacto</title>
+ <script src="formularioc.js"></script>   
+</head>
+<body>
+    <h2>Formulario de contacto</h2>
+<form id="contact-form">
+    <div class="wizard-step" data-step="1">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required>
+
+
+      <div class="wizard-step" data-step="1">
+        <label for="name">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+
+        <div class="wizard-step" data-step="1">
+            <label for="name">Telefono:</label>
+            <input type="number" id="telefono" name="telefono" required>
+  
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+  
+    <div class="wizard-step" data-step="2">
+      <label for="subject">Asunto:</label>
+      <input type="text" id="subject" name="subject" required>
+    </div>
+  
+    <div class="wizard-step" data-step="3">
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="message" required></textarea>
+    </div>
+  
+    <div class="wizard-buttons">
+      <button type="button" class="prev-button">Anterior</button>
+      <button type="button" class="next-button">Siguiente</button>
+      <button type="submit">Enviar</button>
+    </div>
+  </form>
+</body>
+</html>
+  
